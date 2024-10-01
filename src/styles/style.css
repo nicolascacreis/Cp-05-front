@@ -1,2 +1,81 @@
-header {
-  margin: 10px; }
+/* Variáveis de estilo */
+:root {
+  --primary-color: #951EB6; /* Cor principal inspirada no verde do Spotify */
+  --text-color: #333;
+  --icon-size: 3.5rem;
+  --hover-color: #563061;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #272727;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Aprsentação */
+
+.apresentacao p{
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilizando os benefícios */
+.benefit-icon {
+  font-size: var(--icon-size);
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.benefit-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* Efeitos de hover */
+.benefit-icon:hover {
+  color: var(--hover-color);
+}
+
+.benefit-title:hover {
+  color: var(--hover-color);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .benefit-title {
+      font-size: 1.3rem;
+  }
+
+  .section-title {
+      font-size: 2rem;
+  }
+
+  .benefit-icon {
+      font-size: 3rem;
+  }
+}
+
+
