@@ -1,2 +1,60 @@
-header {
-  margin: 10px; }
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css";
+.apresentacao {
+  overflow: hidden;
+}
+
+.benefit-icon {
+  color: #772e8b;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+.benefit-icon:hover {
+  color: #461b52;
+}
+
+h4 {
+  color: #772e8b;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.depoimentos {
+  width: 100%;
+}
+.depoimentos h1,
+.depoimentos h3 {
+  color: #563061;
+  font-weight: 700;
+}
+.depoimentos p {
+  font-size: 25px;
+}
+.depoimentos .card-text {
+  padding: 1.5rem 3rem;
+}
+
+#depoimentos-container {
+  margin: 0 3rem;
+  padding: 1rem;
+}
+
+#depoimentos-carousel {
+  display: none;
+}
+
+@media (max-width: 790px) {
+  #depoimentos-carousel {
+    display: block;
+  }
+  #depoimentos-container {
+    display: none;
+  }
+  .card {
+    margin: 2rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

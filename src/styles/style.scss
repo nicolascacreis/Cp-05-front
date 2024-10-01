@@ -1,3 +1,75 @@
-header {
-    margin: 10px;
-} 
+$cor1: #B000E0;
+$cor2: #951EB6;
+$cor3: #772e8b;
+$cor4: #563061;
+$cor5: #322436;
+$cor6: #312b33;
+
+// Import Bootstrap
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css";
+
+// Variáveis para consistência
+$primary-color: #772e8b;
+$icon-size: 3rem;
+
+// Resolução bug scrollbar
+.apresentacao{
+    overflow: hidden;
+}
+// Estilos customizados
+.benefit-icon {
+    color: $primary-color;
+    font-size: $icon-size;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: darken($primary-color, 15%);
+    }
+}
+
+h4 {
+    color: $primary-color;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+// Propriedades dos cards
+.depoimentos {
+    width: 100%;
+    h1,
+    h3 {
+        color: $cor4;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 25px;
+    }
+    .card-text{
+        padding: 1.5rem 3rem;
+    }
+}
+#depoimentos-container{
+    margin: 0 3rem;
+    padding: 1rem;
+}
+#depoimentos-carousel {
+    display: none;
+}
+@media (max-width: 790px) {
+    #depoimentos-carousel {
+        display: block;
+    }
+
+    #depoimentos-container {
+        display: none;
+
+    }
+
+    .card{
+        margin: 2rem 0;
+    }
+}
