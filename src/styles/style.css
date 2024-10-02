@@ -1,13 +1,111 @@
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css";
+
+
+:root {
+  --primary-color: #951EB6;
+  /* Cor principal inspirada no verde do Spotify */
+  --text-color: #333;
+  --icon-size: 3.5rem;
+  --hover-color: #563061;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #272727;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Apresentação */
 .apresentacao {
   overflow: hidden;
 }
+
+.apresentacao p {
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilizando os benefícios */
+.benefit-icon {
+  font-size: var(--icon-size);
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.benefit-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* Efeitos de hover */
+.benefit-icon:hover {
+  color: var(--hover-color);
+}
+
+.benefit-title:hover {
+  color: var(--hover-color);
+}
+
+/* Espaço para Imagens */
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.img-fluid {
+  max-width: 250px;
+  height: auto;
+}
+
+
+/* depoimentos */
 
 .benefit-icon {
   color: #772e8b;
   font-size: 3rem;
   transition: color 0.3s ease;
 }
+
 .benefit-icon:hover {
   color: #461b52;
 }
@@ -24,14 +122,17 @@ p {
 .depoimentos {
   width: 100%;
 }
+
 .depoimentos h1,
 .depoimentos h3 {
   color: #563061;
   font-weight: 700;
 }
+
 .depoimentos p {
   font-size: 25px;
 }
+
 .depoimentos .card-text {
   padding: 1.5rem 3rem;
 }
@@ -49,11 +150,25 @@ p {
   #depoimentos-carousel {
     display: block;
   }
+
   #depoimentos-container {
     display: none;
   }
+
   .card {
     margin: 2rem 0;
+  }
+
+  .benefit-title {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .benefit-icon {
+    font-size: 3rem;
   }
 }
 
