@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Variáveis de estilo */
 :root {
   --primary-color: #951EB6; /* Cor principal inspirada no verde do Spotify */
   --text-color: #333;
   --icon-size: 3.5rem;
   --hover-color: #563061;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* Estilos gerais */
@@ -14,6 +23,202 @@ body {
 
 footer p {
   color: #fff;
+}
+
+/* Nav Bar */
+.botao-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #951EB6;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.botao-default:hover {
+  background-color: #563061;
+}
+
+.botao-default a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.redes-sociais-botoes {
+  display: flex;
+  gap: 18px;
+}
+
+.redes-sociais-botoes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #951EB6;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow .3s ease;
+}
+
+.redes-sociais-botoes a:hover {
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-secao {
+  color: #951EB6;
+  font-size: 2.2rem;
+  margin-top: 100px;
+}
+
+.subtitulo-secao {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.subtitulo-secao #roxo {
+  color: #5e306b;
+}
+
+header {
+  width: 100%;
+  padding: 28px 8%;
+  position: sticky;
+  top: 0;
+  background-color: #644080;
+  z-index: 3;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-logo {
+  font-size: 24px;
+  color: #1f1f1f;
+}
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.nav-item.active a {
+  color: #000000c0;
+  border-bottom: 3px solid #0d102e;
+}
+
+#mobile-botao,
+#mobile-navbar {
+  display: none;
+}
+
+
+/* Inicio */
+.hero-section {
+  display: flex;
+}
+
+#inicio {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+
+#inicio .titulo {
+  font-size: 3.4rem;
+  color: #e8e6e9;
+}
+
+#inicio .titulo #roxo {
+  color: #951EB6;
+}
+
+#inicio .titulo .sublinhado {
+  border-bottom: 5px solid #951EB6;
+}
+
+#inicio .descricao {
+  font-size: 1.2rem;
+}
+
+#inicio-botoes {
+  display: flex;
+  gap: 24px;
+}
+
+#inicio-botoes .botao-default {
+  text-decoration: none;
+  color: #fff;
+}
+
+#botao-phone {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  color: #4954a3;
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: box-shadow .3s ease;
+}
+
+#botao-phone:hover {
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+#botao-phone i {
+  color: #fff;
+}
+
+#banner {
+  margin: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  z-index: 2;
+}
+
+#banner img {
+  height: 500px;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#banner img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Aprsentação */
@@ -91,8 +296,6 @@ p {
   height: auto;
 }
 
-
-
 /* Responsividade */
 @media (max-width: 768px) {
   .benefit-title {
@@ -108,4 +311,39 @@ p {
   }
 }
 
+@media screen and (max-width: 1170px) {
+  #nav-list,
+  #navbar .botao-default {
+      display: none;
+  }
 
+  #mobile-botao {
+      display: flex;
+      border: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  #mobile-navbar.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 12px 0;
+      list-style: none;
+  }
+
+  #mobile-nav-list .nav-item {
+      text-align: center;
+  }
+
+  #banner {
+    display: none;
+  }
+}
