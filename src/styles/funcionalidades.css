@@ -1,6 +1,6 @@
 .custom-card {
   background-color: #272727;
-  border: solid purple 1px;
+  border: solid #951EB6 1px;
   border-radius: 8px;
   text-align: center;
   padding: 15px;
@@ -10,7 +10,7 @@
     box-shadow: 0 2px 15px 5px rgba(128, 0, 128, 0.5); }
   .custom-card .custom-header {
     font-size: 1.2rem;
-    color: purple;
+    color: #951EB6;
     margin-bottom: 10px; }
   .custom-card .custom-icon {
     margin: 10px 0; }

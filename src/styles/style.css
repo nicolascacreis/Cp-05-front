@@ -31,7 +31,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #951EB6;
+  background-color: purple;
   border-radius: 12px;
   padding: 10px 14px;
   font-weight: 600;
@@ -98,7 +98,7 @@ header {
   padding: 28px 8%;
   position: sticky;
   top: 0;
-  background-color: #644080;
+  background-color: #951EB6;
   z-index: 3;
 }
 
