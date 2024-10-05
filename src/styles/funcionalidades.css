@@ -1,0 +1,26 @@
+.custom-card {
+  background-color: #272727;
+  border: solid purple 1px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease; }
+  .custom-card:hover {
+    box-shadow: 0 2px 15px 5px rgba(128, 0, 128, 0.5); }
+  .custom-card .custom-header {
+    font-size: 1.2rem;
+    color: purple;
+    margin-bottom: 10px; }
+  .custom-card .custom-icon {
+    margin: 10px 0; }
+    .custom-card .custom-icon img {
+      width: 50px;
+      height: 50px; }
+  .custom-card .custom-description {
+    font-size: 0.9rem;
+    color: white; }
+
+@media (min-width: 768px) {
+  .custom-card {
+    max-width: 90%; } }
